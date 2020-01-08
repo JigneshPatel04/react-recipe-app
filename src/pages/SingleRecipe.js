@@ -13,6 +13,21 @@ class SingleRecipe extends Component {
     };
   }
 
+  // async componentDidMount() {
+  //   const url = `https://www.food2fork.com/api/get?key=${your_api_key}&rId=${this.state.id}`;
+  //   try {
+  //     const response = await fetch(url);
+  //     const responseData = await response.json();
+  //     console.log(responseData)
+  //     this.setState({
+  //       recipe: responseData.recipe,
+  //       loading: false
+  //     });
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
+
   render() {
     console.log('singlepages')
     const {
@@ -43,7 +58,7 @@ class SingleRecipe extends Component {
           <div className='col-10 mx-auto col-md-6 my-3'>
             <Link
               to='/recipes'
-              className='btn btn-warning md-5 text-capitalize'
+              className='btn btn-warning mb-5 text-capitalize'
             >
               back to recipes list
             </Link>
